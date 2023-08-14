@@ -30,7 +30,7 @@
                 console.log(cantidad)
                 if (cantidad > 0) {
 
-                    // Hacer una solicitud al servidor con la cantidad de noticias
+                    
                     window.location.href = "About.aspx?cantidad=" + cantidad;
                 }
             });
@@ -44,9 +44,9 @@
                 var cantidad = parseInt(selectTiempoRefresco.value);
 
                 console.log(cantidad)
-                //var tiempoRefresco = parseInt(selectTiempoRefresco.value);
+                
                 if (cantidad > 0) {
-                    // Hacer una solicitud al servidor con la cantidad de noticias
+                    
                     window.location.href = "About.aspx?refresco=" + cantidad;
                 }
             });

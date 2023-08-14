@@ -34,7 +34,7 @@ namespace pruebaWeb
                 {
                     lblTitulo.Text = noticiaDetalles.Titulo;
                     lblResumen.Text = noticiaDetalles.Resumen;
-                    // Otros campos que quieras mostrar en la página
+                  
                 }
                 else
                 {

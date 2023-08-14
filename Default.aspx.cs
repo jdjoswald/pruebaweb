@@ -20,7 +20,7 @@ namespace pruebaWeb
             {
                 int tiempoRefresco = Global.tiempoRefresco;
 
-                // Crear un script con la variable tiempoRefresco
+               
                 string script = $@"
                     <script>
 
@@ -41,7 +41,7 @@ namespace pruebaWeb
 
                
 
-                // Agregar el script a la página usando LiteralControl
+             
                 LiteralControl literalControl = new LiteralControl(script);
                 Page.Header.Controls.Add(literalControl);
                 obtenerNoticia();
@@ -51,7 +51,7 @@ namespace pruebaWeb
 
         private void obtenerNoticia()
         {
-            // Obtener el valor del cuadro de texto
+        
 
             
             NoticiasController noticiaController = new NoticiasController();

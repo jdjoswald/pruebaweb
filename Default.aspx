@@ -51,9 +51,9 @@
         Listado de noticias
     </h1>
    
-    <!-- Lista de Noticias -->
+ 
     <div id="noticiasContainer" runat="server">
-        <!-- Las noticias serán agregadas aquí dinámicamente desde el código de servidor -->
+       
     </div>
 
    

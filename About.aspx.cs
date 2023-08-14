@@ -28,8 +28,7 @@ namespace pruebaWeb
 
         private int ObtenerCantidadNoticiasDesdeURL()
         {
-            int cantidad = Global.MiVariableGlobal;  // Valor predeterminado si no se encuentra en la URL
-
+            int cantidad = Global.MiVariableGlobal; 
             if (Request.QueryString["cantidad"] != null)
             {
                 int.TryParse(Request.QueryString["cantidad"], out cantidad);
@@ -40,7 +39,7 @@ namespace pruebaWeb
 
         private int TimepoDeRefreco()
         {
-            int cantidad = Global.tiempoRefresco;  // Valor predeterminado si no se encuentra en la URL
+            int cantidad = Global.tiempoRefresco; 
 
             if (Request.QueryString["refresco"] != null)
             {
