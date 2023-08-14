@@ -22,6 +22,7 @@ namespace pruebaWeb
 
             Global.MiVariableGlobal = ObtenerCantidadNoticiasDesdeURL();
             Global.tiempoRefresco = TimepoDeRefreco();
+            Global.rss = Rss();
 
 
         }
@@ -44,6 +45,18 @@ namespace pruebaWeb
             if (Request.QueryString["refresco"] != null)
             {
                 int.TryParse(Request.QueryString["refresco"], out cantidad);
+            }
+
+            return cantidad;
+        }
+
+        private string Rss()
+        {
+            string cantidad = Global.rss;
+
+            if (Request.QueryString["rss"] != null)
+            {
+               cantidad=(Request.QueryString["rss"].ToString());
             }
 
             return cantidad;

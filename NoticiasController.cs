@@ -30,7 +30,7 @@ namespace pruebaWeb
             }
             List<NoticiaModel> noticias = new List<NoticiaModel>();
 
-            using (XmlReader reader = XmlReader.Create("https://feeds.bbci.co.uk/news/rss.xml"))
+            using (XmlReader reader = XmlReader.Create(Global.rss))
             {
                 SyndicationFeed feed = SyndicationFeed.Load(reader);
                 int contador = 0;  

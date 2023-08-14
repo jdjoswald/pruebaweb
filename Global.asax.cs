@@ -12,6 +12,7 @@ namespace pruebaWeb
     public class Global : HttpApplication
     {
         public static int MiVariableGlobal { get; set; }
+        public static string rss { get; set; }
         public static int tiempoRefresco { get; set; }
         public static List<string> MiArregloGlobal { get; set; }
 
@@ -20,6 +21,7 @@ namespace pruebaWeb
             Global.MiArregloGlobal = new List<string>();
             MiVariableGlobal = 10;
             tiempoRefresco = 30000;
+            rss = "https://feeds.bbci.co.uk/news/world/rss.xml";
 
             // Code that runs on application startup
             RouteConfig.RegisterRoutes(RouteTable.Routes);

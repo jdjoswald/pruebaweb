@@ -15,8 +15,24 @@
             <option value="60000">1 minuto</option>
             <option value="300000">5 minutos</option>
             <option value="600000">10 minutos</option>
+        
         </select>
-        <button type="button" id="btnActualizar">Actualizar Noticias</button>
+        <button type="button" id="btnActualizar">Actualizar Noticias</button>  
+        
+    </div>
+
+
+    <div>
+        <label for="rss">RSS:</label>
+        <select id="rss">
+           
+
+             <option value="https://feeds.bbci.co.uk/news/world/rss.xml" selected> BBC News.</option>
+            <option value="http://rss.cnn.com/rss/edition.rss">CNN</option>
+            <option value="https://rss.nytimes.com/services/xml/rss/nyt/HomePage.xml"> New York Times.</option>
+        </select>
+        
+        <button type="button" id="btnrss">Actualizar rss</button>
     </div>
 
 
@@ -48,6 +64,22 @@
                 if (cantidad > 0) {
                     
                     window.location.href = "About.aspx?refresco=" + cantidad;
+                }
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var btnRss = document.getElementById("btnrss");
+            var selectRss = document.getElementById("rss");
+
+            btnRss.addEventListener("click", function () {
+                var cantidad = parseInt(selectRss.value);
+
+                console.log(cantidad)
+
+                if (cantidad > 0) {
+
+                    window.location.href = "About.aspx?rss=" + cantidad;
                 }
             });
         });
